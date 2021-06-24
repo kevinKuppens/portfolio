@@ -1,0 +1,136 @@
+.primary-text{
+    margin : 6rem 0;
+    font-size:7rem;
+    font-family: 'Yeseva One', cursive;
+    position:relative;
+
+}
+.primary-text::after{
+    content:"";
+    width:70%;
+    height:2px;
+    background-color: rgb(230, 230, 230);
+    position:absolute;
+    bottom:-3rem;
+    left:15%;
+}
+.primary-text::before{
+    content:"";
+    width:10%;
+    height:2px;
+    background-color: rgb(230, 230, 230);
+    position:absolute;
+    top:-3rem;
+    left:45%;
+}
+
+.title-fullName{
+    font-size:2rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+h1, h2{
+    font-size:2rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.front-place{
+    
+    mix-blend-mode:difference;
+    z-index: 2;
+}
+
+.landing-btn{
+    padding:1rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid #fff;
+    color:rgb(230, 230, 230);
+    background-color:transparent;
+    mix-blend-mode:difference;
+    z-index: 2;
+    position:relative;
+    top:4rem;
+}
+.landing-btn:hover{
+    /* cursor: pointer; */
+    color:black;
+    background-color: grey;
+    border:1px solid grey;
+}
+
+#landing-text{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    top:1rem;
+}
+
+#landing-background{
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden
+}
+#landing-background::after{
+    content:"";
+    animation: grain 8s steps(10) infinite;
+    background:url('../../assets/paper_1_@2X.png');
+    background-size: 10%;
+    background-repeat: repeat;
+    height:300%;
+    width:300%;
+    opacity:1;
+    filter:invert();
+    mix-blend-mode:color-dodge;
+    position:absolute;
+}
+@keyframes grain {
+    0%, 100% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, -10%) }
+    20% { transform:translate(-15%, 5%) }
+    30% { transform:translate(7%, -25%) }
+    40% { transform:translate(-5%, 25%) }
+    50% { transform:translate(-15%, 10%) }
+    60% { transform:translate(15%, 0%) }
+    70% { transform:translate(0%, 15%) }
+    80% { transform:translate(3%, 35%) }
+    90% { transform:translate(-10%, 10%) }
+  }
+.background-decor{
+    position:relative;
+}
+.circle-primary{
+    height:40rem;
+    width:40rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.5);
+    background: #fff;
+    z-index: 1;
+    position:absolute;
+    top:calc(100% - (40rem/2));
+    left:calc(100% - (40rem/2));
+    filter:drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+}
+
+.circle-secondary{
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.2);
+    position:absolute;
+}
+
+.circle-large{
+    width:70rem;
+    height:70rem;
+    top:calc(100% - (70rem/2));
+    left:calc(100% - (70rem/2));
+}

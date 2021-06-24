@@ -1,0 +1,11 @@
+
+
+#main-window{
+    background: linear-gradient(45deg, #457C8D, #083D4E);
+    margin:1vh;
+    height:98vh;
+    width:calc(100vw - 2vh);
+    overflow-y:hidden;
+    position:relative;
+   
+}
