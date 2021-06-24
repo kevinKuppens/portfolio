@@ -1,0 +1,40 @@
+#nav-container{
+    position:absolute;
+    width:99vw;
+    height:5.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding : 2rem 4rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    mix-blend-mode: difference;
+    color:rgba(255,255,255,0.5);
+    z-index:100;
+}
+
+#nav-link ul{
+    display:flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    width:20vw;
+    mix-blend-mode: difference;
+}
+
+a {
+    text-decoration: none;
+    color:rgba(255,255,255,0.5);
+    font-size:0.8rem;
+    position:relative;
+    z-index:10;
+    mix-blend-mode: difference;
+    transition: all 0.2s ease-in;
+}
+
+a:hover{
+    cursor:pointer;
+    font-size:0.9rem;
+    color:#fff;
+}

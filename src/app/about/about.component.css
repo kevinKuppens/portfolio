@@ -1,0 +1,73 @@
+.about-background{
+    width:200vw;
+    height:200vh;
+    transform: rotateZ(10deg);
+    background : linear-gradient(30deg, #4B7D8D, #235C6E);
+    position:absolute;
+    top:10vh;
+    left:-100vw;
+    z-index: 0;
+}
+.container{
+    max-width: 1400px;
+    height:100%;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.portrait{
+    height: 15rem;
+}
+
+.about-text{
+    padding : 1rem 5rem 1rem 2rem;
+    font-size:1rem;
+    font-weight: 200;
+    color:rgba(24, 24, 24);
+    position:relative;
+}
+
+.about-text::after{
+    content:"";
+    width:2px;
+    height:300px;
+    background-color: #242424;
+    position:absolute;
+    right: 2vw;
+    top:30%;
+}
+h3{
+    font-size:2rem !important;
+    margin-bottom: 1rem;
+}
+#about-me{
+    padding : 1rem;
+    position: relative;
+    max-width:30vw;
+    z-index: 2;
+    background: linear-gradient(45deg, #B7D7E1, #9AD8EC);
+    display:flex;
+    align-items: center;
+}
+h3{
+    font-family: 'Yeseva One', cursive;
+    font-weight:400;
+    font-size:1.5rem;
+}
+
+#skills{
+    position: relative;
+    z-index: 2;
+    max-width: 25vw;
+}
+#skills p{
+    font-weight: 200;
+    font-size:1rem;
+    margin-bottom: 1rem;
+}
+h5{
+    font-size: 1.2rem;
+    margin-bottom:1rem;
+    font-weight: 200!important;
+}

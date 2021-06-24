@@ -5,7 +5,7 @@
     margin:1vh;
     height:98vh;
     width:calc(100vw - 2vh);
-    overflow-y:hidden;
+    overflow:hidden;
     position:relative;
    
 }
