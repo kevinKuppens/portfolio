@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { NavComponent } from './nav/nav.component';
 import { AboutComponent } from './about/about.component';
+import { WorkComponent } from './work/work.component';
+import { WorkCardComponent } from './work-card/work-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     NavComponent,
-    AboutComponent
+    AboutComponent,
+    WorkComponent,
+    WorkCardComponent
   ],
   imports: [
     BrowserModule,

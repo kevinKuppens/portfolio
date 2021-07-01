@@ -1,0 +1,11 @@
+<img [src]="thumbLink" />
+<div class="work-body">
+  <h5><ng-content select=".title"></ng-content></h5>
+  <p class="application">
+    <ng-content select=".apps"></ng-content>
+  </p>
+  <p class="body">
+    <ng-content select=".description"></ng-content>
+  </p>
+  <a [href]="link"> show details </a>
+</div>

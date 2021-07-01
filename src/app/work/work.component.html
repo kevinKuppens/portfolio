@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="works-header">
+    <h3>Works</h3>
+  </div>
+
+  <div class="works-list">
+    <div *ngFor="let work of works">
+      <app-work-card
+        class="works-item"
+        [link]="work.link"
+        [thumbLink]="work.thumbnail"
+      >
+        <ng-container class="title">{{ work.title }}</ng-container>
+        <ng-container class="apps">{{ work.applications }}</ng-container>
+        <ng-container class="description">{{ work.description }}</ng-container>
+      </app-work-card>
+    </div>
+  </div>
+</div>

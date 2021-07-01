@@ -1,73 +1,109 @@
-.about-background{
-    width:200vw;
-    height:200vh;
-    transform: rotateZ(10deg);
-    background : linear-gradient(30deg, #4B7D8D, #235C6E);
-    position:absolute;
-    top:10vh;
-    left:-100vw;
-    z-index: 0;
+.about-background {
+  width: 200vw;
+  height: 200vh;
+  transform: rotateZ(10deg);
+  background: linear-gradient(30deg, #4b7d8d, #235c6e);
+  position: absolute;
+  top: 10vh;
+  left: -100vw;
+  z-index: 0;
 }
-.container{
-    max-width: 1400px;
-    height:100%;
-    margin:0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.container {
+  max-width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.portrait{
-    height: 15rem;
-}
-
-.about-text{
-    padding : 1rem 5rem 1rem 2rem;
-    font-size:1rem;
-    font-weight: 200;
-    color:rgba(24, 24, 24);
-    position:relative;
+.portrait {
+  height: 15rem;
 }
 
-.about-text::after{
-    content:"";
-    width:2px;
-    height:300px;
-    background-color: #242424;
-    position:absolute;
-    right: 2vw;
-    top:30%;
-}
-h3{
-    font-size:2rem !important;
-    margin-bottom: 1rem;
-}
-#about-me{
-    padding : 1rem;
-    position: relative;
-    max-width:30vw;
-    z-index: 2;
-    background: linear-gradient(45deg, #B7D7E1, #9AD8EC);
-    display:flex;
-    align-items: center;
-}
-h3{
-    font-family: 'Yeseva One', cursive;
-    font-weight:400;
-    font-size:1.5rem;
+.about-text {
+  padding: 1rem 5rem 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 200;
+  color: rgba(24, 24, 24);
+  position: relative;
 }
 
-#skills{
-    position: relative;
-    z-index: 2;
-    max-width: 25vw;
+.about-text::after {
+  content: "";
+  width: 2px;
+  height: 300px;
+  background-color: #242424;
+  position: absolute;
+  right: 2vw;
+  top: 30%;
 }
-#skills p{
-    font-weight: 200;
-    font-size:1rem;
-    margin-bottom: 1rem;
+h3 {
+  font-size: 2rem !important;
+  margin-bottom: 1rem;
 }
-h5{
-    font-size: 1.2rem;
-    margin-bottom:1rem;
-    font-weight: 200!important;
+#about-me {
+  padding: 1rem;
+  position: relative;
+  max-width: 30vw;
+  z-index: 2;
+  background: linear-gradient(45deg, #b7d7e1, #9ad8ec);
+  display: flex;
+  align-items: center;
+}
+h3 {
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+#skills {
+  position: relative;
+  z-index: 2;
+  max-width: 25vw;
+  display: flex;
+  flex-direction: column;
+}
+#skills p {
+  font-weight: 200;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+#skills button {
+  width: 10rem;
+  padding: 0.5rem 2rem;
+  position: relative;
+  top: 2rem;
+  right: 5rem;
+  font-weight: 200;
+  border-radius: 0 0 1rem 1rem;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  align-self: flex-end;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    font-weight 0.2s ease-in-out;
+}
+#skills button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: rgba(24, 24, 24);
+  font-weight: 700 !important;
+}
+#skills::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 20rem solid transparent;
+  border-right: 20rem solid transparent;
+  border-bottom: 25rem solid #457c8d;
+  transform: rotateZ(-23deg);
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  z-index: -1;
+}
+h5 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 200 !important;
 }
