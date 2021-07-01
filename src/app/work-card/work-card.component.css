@@ -11,13 +11,14 @@ h5 {
   font-family: "Yeseva One", cursive;
   font-weight: 400;
   font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 .application {
   font-style: italic;
   font-size: 0.8rem;
 }
 .body {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   font-size: 0.8rem;
 }
 a {

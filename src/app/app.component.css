@@ -1,8 +1,9 @@
 #main-window {
   background: linear-gradient(45deg, #457c8d, #083d4e);
-  margin: 1vh;
-  height: 98vh;
-  width: calc(100vw - 2vh);
+  /* margin: 1vh;
+  
+  width: calc(100vw - 2vh); */
+  height: 100vh;
   overflow: hidden;
   position: relative;
 }
